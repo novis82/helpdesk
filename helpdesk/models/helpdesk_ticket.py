@@ -49,12 +49,7 @@ class HelpdeskTicket(models.Model):
         comodel_name='helpdesk.stage',
         group_expand='_read_group_stage_ids',
         string='Stage')
-    picking_id = fields.Many2one(
-        string="Picking:",
-        comodel_name='stock.picking',
-        help="Picking related",
-        # readonly=True,
-    )
+
     cause = fields.Many2one(
         string="Cause:",
         comodel_name='helpdesk.cause',

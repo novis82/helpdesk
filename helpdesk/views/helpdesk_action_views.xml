@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id="view_helpdesk_action_form" model="ir.ui.view">
+      <field name="name">view.helpdesk_action.form</field>
+      <field name="model">helpdesk.action</field>
+      <field name="arch" type="xml">
+        <form string="HelpDesk action">
+          <sheet>
+            <group name="main">
+              <field name="name" />
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+  </data>
+</odoo>

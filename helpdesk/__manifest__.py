@@ -20,6 +20,7 @@
         "views/helpdesk_team_views.xml",
         "views/helpdesk_stage_views.xml",
         "views/res_users_views.xml",
+        "views/helpdesk_action_views.xml",
 
     ],
     "application": True,
