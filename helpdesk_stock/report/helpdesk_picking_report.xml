@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="helpdesk_picking_report" inherit_id="stock.report_picking">
+    <xpath expr="//h1[@t-field='o.name']" position="after">
+      <t t-if="o.ticket_id">
+        <div class="clearfix"/>
+        <div style="padding_top:5px;padding_bottom:5px">
+          <span><b>Helpdesk Ticket: </b></span><span t-field="o.ticket_id"/>
+        </div>
+      </t>
+    </xpath>
+  </template>
+</odoo>
